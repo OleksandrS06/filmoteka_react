@@ -1,0 +1,24 @@
+.Layout {
+  display: flex;
+  gap: 20px;
+
+  font-size: 22px;
+  font-weight: 700;
+  /* list-style: none; */
+  text-transform: uppercase;
+  padding-left: 20px;
+  background-color: rgb(16, 65, 16);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.NavLink {
+  text-decoration: none;
+  color: rgb(26, 7, 43);
+  transition: color 500ms, text-shadow;
+}
+
+.NavLink:hover {
+  color: azure;
+  text-shadow: 3px 3px 4px rgb(26, 7, 43);
+}

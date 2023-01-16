@@ -1,0 +1,12 @@
+.section {
+  background-color: rgb(26, 7, 43);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(21, 126, 56);
+  text-shadow: 2px 2px 3px rgb(16, 40, 119);
+}

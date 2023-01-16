@@ -1,0 +1,13 @@
+.castList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.castList__item {
+  width: 100px;
+}
+
+.castList__image {
+  border-radius: 8px;
+}

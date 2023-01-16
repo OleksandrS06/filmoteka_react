@@ -1,0 +1,62 @@
+.moviesSection {
+  padding: 30px 40px;
+  background-color: rgb(26, 7, 43);
+}
+
+.container {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.image {
+  width: 250px;
+}
+
+/* .filmData */
+
+.text {
+  margin-bottom: 15px;
+  color: rgb(134, 143, 108);
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+.backBtn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: rgb(26, 7, 43);
+  background-color: rgb(21, 126, 56);
+  transition: color 500ms, outline 500ms;
+}
+.backBtn:hover {
+  color: beige;
+  background-color: rgb(26, 7, 43);
+  outline: 2px beige solid;
+}
+
+.addInfo {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.addInfo__link {
+  width: 50px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(26, 7, 43);
+  background-color: rgb(21, 126, 56);
+  transition: color 500ms, outline 500ms;
+}
+.addInfo__link:hover {
+  color: beige;
+  background-color: rgb(26, 7, 43);
+  outline: 2px beige solid;
+}
