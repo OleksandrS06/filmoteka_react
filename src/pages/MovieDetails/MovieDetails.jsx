@@ -29,6 +29,7 @@ const MovieDetails = () => {
       }
     }
     fetchMovie();
+    //eslint-disable-next-line
   }, []);
 
   const { original_title, vote_average, overview, poster_path, genres } = film;
@@ -50,7 +51,11 @@ const MovieDetails = () => {
           Go back
         </Link>
         <div className={css.container}>
-          <img src={poster_pathUrl(poster_path)} className={css.image} />
+          <img
+            src={poster_pathUrl(poster_path)}
+            className={css.image}
+            alt="poster"
+          />
           <div className={css.filmData}>
             <h2 className={css.text}>{original_title}</h2>
             <p className={css.text}>

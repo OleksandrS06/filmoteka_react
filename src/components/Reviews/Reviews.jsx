@@ -25,6 +25,7 @@ const Reviews = () => {
       }
     }
     fetchMovie();
+    //eslint-disable-next-line
   }, []);
 
   return (

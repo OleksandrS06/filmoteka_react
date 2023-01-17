@@ -25,6 +25,7 @@ const Cast = () => {
       }
     }
     fetchCast();
+    //eslint-disable-next-line
   }, []);
 
   return (
@@ -39,6 +40,7 @@ const Cast = () => {
                 <img
                   src={poster_pathUrl(profile_path)}
                   className={css.castList__image}
+                  alt="poster"
                 />
                 <p>{original_name}</p>
                 <p>Character:{character}</p>

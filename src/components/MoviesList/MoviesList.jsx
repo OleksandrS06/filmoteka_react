@@ -13,7 +13,7 @@ const MoviesList = ({ films }) => {
         return (
           <li key={id} className={css.moviesList__item}>
             <Link to={`/movies/${id}`} state={{ from: location }}>
-              <img src={poster_pathUrl(poster_path)} />
+              <img src={poster_pathUrl(poster_path)} alt="poster" />
 
               <div className={css.card__info}>
                 <p className={css.card__text__slide}>{original_title}</p>
