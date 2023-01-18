@@ -28,7 +28,7 @@ const Movies = () => {
       }
     }
     fetchMovie();
-  }, [searchParams]);
+  }, [request]);
   const submitHandler = e => {
     e.preventDefault();
     const searchParams = e.target.query.value.trim().toLowerCase();
