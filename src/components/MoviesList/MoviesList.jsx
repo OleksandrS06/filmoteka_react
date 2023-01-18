@@ -4,7 +4,6 @@ import css from '../MoviesList/MoviesList.module.css';
 
 const MoviesList = ({ films }) => {
   const location = useLocation();
-  console.log(films);
   return (
     <ul className={css.moviesList}>
       {films.map(({ original_title, id, poster_path, vote_average }) => {
