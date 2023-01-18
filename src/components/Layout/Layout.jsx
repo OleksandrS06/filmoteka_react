@@ -4,6 +4,7 @@ import css from '../Layout/Layout.module.css';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Suspense } from 'react';
 
 const Layout = () => {
   return (
@@ -27,7 +28,9 @@ const Layout = () => {
         </div>
       </header>
       <main>
-        <Outlet />
+        <Suspense fallback={<div>Loading homepage...</div>}>
+          <Outlet />
+        </Suspense>
       </main>
       <ToastContainer />
     </>

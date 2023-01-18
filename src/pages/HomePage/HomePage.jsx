@@ -16,8 +16,7 @@ const HomePage = () => {
       setError('');
       try {
         const filmsData = await getTrendingFilms();
-        setFilms(filmsData.results);
-        console.log(filmsData.results);
+        setFilms(filmsData);
       } catch (error) {
         setError('something went wrong');
       } finally {

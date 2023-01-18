@@ -17,7 +17,7 @@ const Cast = () => {
       setError('');
       try {
         const castInfo = await getCastInfo(moviesId);
-        setCast(castInfo.cast);
+        setCast(castInfo);
       } catch (error) {
         setError('something went wrong');
       } finally {
@@ -25,8 +25,7 @@ const Cast = () => {
       }
     }
     fetchCast();
-    //eslint-disable-next-line
-  }, []);
+  }, [moviesId]);
 
   return (
     <>

@@ -16,8 +16,7 @@ const Reviews = () => {
       setError('');
       try {
         const filmDetails = await getReviews(moviesId);
-        setFilm(filmDetails.results);
-        console.log(filmDetails.results);
+        setFilm(filmDetails);
       } catch (error) {
         setError('something went wrong');
       } finally {
@@ -25,8 +24,7 @@ const Reviews = () => {
       }
     }
     fetchMovie();
-    //eslint-disable-next-line
-  }, []);
+  }, [moviesId]);
 
   return (
     <>
